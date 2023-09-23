@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=3 uid="uid://c6sgfxdtw6l3l"]
+
+[ext_resource type="PackedScene" uid="uid://kudwjf11wjh7" path="res://tile_map.tscn" id="1_sotei"]
+
+[node name="main" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(573, 324)
+
+[node name="TileMap" parent="." instance=ExtResource("1_sotei")]
+position = Vector2(80, 62)
+scale = Vector2(4.4, 4.4)
+layer_0/z_index = 5
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="score_label" type="Label" parent="CanvasLayer"]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -356.0
+offset_top = -54.0
+offset_bottom = 28.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "test"
+vertical_alignment = 1
+
+[node name="turns_label" type="Label" parent="CanvasLayer"]
+anchors_preset = 6
+anchor_left = 1.0
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+offset_left = -359.0
+offset_top = 36.0
+offset_right = -3.0
+offset_bottom = 118.0
+grow_horizontal = 0
+grow_vertical = 2
+theme_override_font_sizes/font_size = 40
+text = "test"
+vertical_alignment = 1
